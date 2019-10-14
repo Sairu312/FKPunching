@@ -641,7 +641,7 @@ RectTransform:
   m_GameObject: {fileID: 560449948}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 139286220}
   m_RootOrder: 0
@@ -726,8 +726,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -600, y: 0}
-  m_SizeDelta: {x: 20, y: 160}
+  m_AnchoredPosition: {x: -300, y: 0}
+  m_SizeDelta: {x: 10, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &622613592
 MonoBehaviour:
@@ -853,7 +853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -984,8 +984,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -450, y: 300}
-  m_SizeDelta: {x: 160, y: 120}
+  m_AnchoredPosition: {x: -250, y: 180}
+  m_SizeDelta: {x: 80, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &970981780
 MonoBehaviour:
@@ -1367,7 +1367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 0.19862808, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1376,7 +1376,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 80
+    m_FontSize: 42
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1412,8 +1412,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 250}
-  m_SizeDelta: {x: 620, y: 120}
+  m_AnchoredPosition: {x: 0, y: 150}
+  m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &2061117310269874363
 PrefabInstance:
@@ -1422,6 +1422,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2061117309508840300, guid: fd10ea40d9d6d4d519f8e4fb13ddfae9,
+        type: 3}
+      propertyPath: checkMark
+      value: 
+      objectReference: {fileID: 947576504}
+    - target: {fileID: 2061117309508840300, guid: fd10ea40d9d6d4d519f8e4fb13ddfae9,
+        type: 3}
+      propertyPath: tip
+      value: 
+      objectReference: {fileID: 1411227624}
+    - target: {fileID: 2061117309508840300, guid: fd10ea40d9d6d4d519f8e4fb13ddfae9,
+        type: 3}
+      propertyPath: firstJointPoint.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061117309508840300, guid: fd10ea40d9d6d4d519f8e4fb13ddfae9,
+        type: 3}
+      propertyPath: punchSpeed.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061117309508840300, guid: fd10ea40d9d6d4d519f8e4fb13ddfae9,
+        type: 3}
+      propertyPath: selectJointNum
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2061117309508840296, guid: fd10ea40d9d6d4d519f8e4fb13ddfae9,
         type: 3}
       propertyPath: m_Name
@@ -1507,31 +1532,6 @@ PrefabInstance:
         type: 3}
       propertyPath: kawaraNum
       value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 2061117309508840300, guid: fd10ea40d9d6d4d519f8e4fb13ddfae9,
-        type: 3}
-      propertyPath: checkMark
-      value: 
-      objectReference: {fileID: 947576504}
-    - target: {fileID: 2061117309508840300, guid: fd10ea40d9d6d4d519f8e4fb13ddfae9,
-        type: 3}
-      propertyPath: tip
-      value: 
-      objectReference: {fileID: 1411227624}
-    - target: {fileID: 2061117309508840300, guid: fd10ea40d9d6d4d519f8e4fb13ddfae9,
-        type: 3}
-      propertyPath: firstJointPoint.x
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2061117309508840300, guid: fd10ea40d9d6d4d519f8e4fb13ddfae9,
-        type: 3}
-      propertyPath: punchSpeed.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2061117309508840300, guid: fd10ea40d9d6d4d519f8e4fb13ddfae9,
-        type: 3}
-      propertyPath: selectJointNum
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd10ea40d9d6d4d519f8e4fb13ddfae9, type: 3}
