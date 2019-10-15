@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -28,7 +29,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-
+        /*
         if(instance == null)
         {
             instance = this;
@@ -37,7 +38,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
-
+        */
 
 
         kawaraArray = new GameObject[kawaraNum];
@@ -70,6 +71,10 @@ public class GameManager : MonoBehaviour
         {
             punchFlag = true;
             punchPower = GetIKSpeed();
+            if (punchPower <= 0)
+            {
+                punchFlag = false;
+            }
         }
         if(punchFlag && punchPower > 0)
         {
@@ -89,6 +94,10 @@ public class GameManager : MonoBehaviour
         if (finishFlag)
         {
             scoreText.text = punchPower.ToString() + "枚！";
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                SceneManager.LoadScene("Scenes/Title");
+            }
         }
         
 

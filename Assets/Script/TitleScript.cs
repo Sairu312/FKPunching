@@ -14,9 +14,19 @@ public class TitleScript : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return))
-        {
-            SceneManager.LoadScene(0);
-            Debug.Log("enter");
-        }
+        
+            SceneManager.LoadScene("Scenes/Main");
+
+        if (Input.GetKeyDown(KeyCode.Escape)) Quit();
+        
+    }
+
+    void Quit()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#elif UNITY_STANDALONE
+    UnityEngine.Application.Quit();
+#endif
     }
 }
